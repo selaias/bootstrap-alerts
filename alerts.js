@@ -1,3 +1,9 @@
+Template.alerts.helpers({
+  alerts: function () {
+    return Alerts.collection_.find();
+  },
+});
+
 Template.alert.rendered = function () {
   var alert = this.data;
   var $node = $(this.firstNode);
@@ -16,12 +22,6 @@ Template.alert.rendered = function () {
     }
   });
 };
-
-Template.alerts.helpers({
-  alerts: function () {
-    return Alerts.collection_.find();
-  },
-});
 
 Template.alert.helpers({
   alertImage: function(){

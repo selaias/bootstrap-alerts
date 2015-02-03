@@ -1,20 +1,25 @@
 Package.describe({
-  summary: "bootstrap alerts with halflings",
-  version: "0.5.0",
-  name: "selaias:bootstrap-alerts",
-  git: "https://github.com/selaias/bootstrap-alerts.git",
+  name: 'selaias:alerts',
+  version: '0.2.1',
+  summary: 'Bootstrap styled alerts with halflings',
+  git: 'https://github.com/selaias/bootstrap-alerts.git',
+  documentation: 'README.md'
 });
 
-Package.onUse(function (api) {
+Package.onUse(function(api) {
   api.versionsFrom('1.0.2.1');
-  api.use(['templating','handlebars'], 'client');
-
-  api.addFiles('lib/alerts.js', 'client');
-  api.addFiles('client/alerts.js', 'client');
-  api.addFiles('client/alerts.html', 'client');
   
-  if(api.export) {
-    api.export('Alerts', 'client');
-  }
+  api.use(['templating'], 'client');
 
+  //js
+  api.addFiles('lib/alerts.js', 'client');
+  
+  //templates
+  api.addFiles('alerts.html', 'client'); 
+  api.addFiles('alerts.js', 'client');
+  
+  //object
+  if(api.export) {
+    api.export('Alerts', 'client')
+  }
 });

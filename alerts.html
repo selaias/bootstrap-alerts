@@ -10,7 +10,9 @@
   <div class="alert alert-{{mode}} {{#if options.dismissable}}alert-dismissable{{/if}} hide {{options.classes}}">
     {{#if options.dismissable}}
     <!--suppress CheckDtdReferences -->
-    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+      <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+    </button>
     {{/if}}
       {{#unless options.html}}
         {{#if options.showIcons}}

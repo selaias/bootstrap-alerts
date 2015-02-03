@@ -4,6 +4,10 @@ Display simple alerts using bootstrap styling and Halflings icons.
 
 (intially taken from https://github.com/EtherPOS/simple-bootstrap3-alerts/)
 
+
+[![Build Status](https://travis-ci.org/selaias/bootstrap-alerts.png)](https://travis-ci.org/selaias/bootstrap-alerts)
+
+
 # Dependencies
 
 Recommended bootstrap package
