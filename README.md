@@ -10,7 +10,8 @@ Display simple alerts using bootstrap styling and Halflings icons.
 
 # Dependencies
 
-Recommended bootstrap package
+
+Recommended the latest bootstrap package
 
 ```
 meteor add twbs:bootstrap
@@ -18,7 +19,7 @@ meteor add twbs:bootstrap
 
 # Installation
 
-    meteor add selaias:bootstrap-alerts
+    meteor add selaias:alerts
 
 # Options 
 
