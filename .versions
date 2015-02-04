@@ -16,7 +16,7 @@ observe-sequence@1.0.4
 ordered-dict@1.0.2
 random@1.0.2
 reactive-var@1.0.4
-selaias:alerts@0.3.0
+selaias:alerts@0.3.1
 spacebars-compiler@1.0.4
 templating@1.0.11
 tracker@1.0.5
