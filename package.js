@@ -1,6 +1,6 @@
 Package.describe({
   name: 'selaias:alerts',
-  version: '0.2.1',
+  version: '0.3.0',
   summary: 'Bootstrap styled alerts with halflings',
   git: 'https://github.com/selaias/bootstrap-alerts.git',
   documentation: 'README.md'
@@ -12,7 +12,7 @@ Package.onUse(function(api) {
   api.use(['templating'], 'client');
 
   //js
-  api.addFiles('lib/alerts.js', 'client');
+  api.addFiles('client/alerts.js', 'client');
   
   //templates
   api.addFiles('alerts.html', 'client'); 
